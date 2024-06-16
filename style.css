@@ -196,8 +196,20 @@ nav .right .up::before{
     height: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 255, 0.151), rgba(78, 5, 5, 0.26));
+    background: linear-gradient(to bottom, rgba(0, 0, 255, 0.329), rgba(78, 5, 5, 0.26));
     
+}
+.contactbg-content{
+    position: absolute;
+   top: 30%;
+   margin: 0 auto;
+}
+.contactbg-content h1{
+    text-align: center;
+    font-size: var(--font-h1);
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
 }
 /* ---- about background image---  */
 .aboutbg{
@@ -475,6 +487,76 @@ button:hover{
     transition: 0.4s;
 }
 .social a i:hover{
+    color: var(---blue);
+}
+
+/* =========================== contact folder start here ===========================  */
+#queries{
+    padding: 5% 0% ;
+    width: 100%;
+    margin: 0 auto;
+}
+.queries-body{
+    text-align: center;
+
+}
+.queries-body h5{
+    font-size: var(--font-h5);
+    font-weight: 600;
+    line-height: 45px;
+    color: var(---black-color);
+}
+.queries-body h2{
+    font-size: var(---font-h2);
+    font-weight: 600;
+    color: var(---black-color);
+    margin-bottom: 80px;
+}
+.queries-body h2::before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #000;
+    margin-top: 60px;
+    margin-left: 150px;
+
+}
+.queries-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 2% 0;
+}
+.queries-container .queries-card{
+    
+    padding: 20px 30px;
+    transition: 0.4s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+}
+.queries-container .queries-card:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+}
+.queries-card h3{
+    font-size: var(--font-h3);
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 60px;
+}
+.queries-card p{
+    font-size: var(---font-p);
+    color: var(---text-color);
+    word-spacing: 2px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.queries-card h5{
+    font-size: var(--font-h5);
+    font-weight: 800;
     color: var(---blue);
 }
 
