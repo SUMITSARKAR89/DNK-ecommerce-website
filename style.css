@@ -129,6 +129,8 @@ nav .right .up::before{
     font-size: 13px;
     
 }
+
+/* index background image  */
 .bg-color{
     background: url(image/home-new-bg-free-img.jpg) ;
     background-position: center;
@@ -142,6 +144,7 @@ nav .right .up::before{
     justify-content: center;
     
 }
+
 .bg-color::after{
     content: '';
     position: absolute;
@@ -151,6 +154,7 @@ nav .right .up::before{
     left: 0;
     background-color: rgba(0,0,0,0.5);
 }
+
 .content {
    position: absolute;
    top: 30%;
@@ -170,6 +174,56 @@ nav .right .up::before{
     color: #fff;
     margin-bottom: 20px;
 }
+/* --- contact background image  */
+.contactbg{
+    background: url(image/banner-06.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.contactbg::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 255, 0.151), rgba(78, 5, 5, 0.26));
+    
+}
+/* ---- about background image---  */
+.aboutbg{
+    background: url(image/banner-04.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.aboutbg::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 255, 0.151), rgba(78, 5, 5, 0.26));
+    
+}
+
 
 
 .buttons a{
