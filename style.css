@@ -195,91 +195,6 @@ nav .right .up::before{
     margin-bottom: 20px;
 }
 
-#special{
-    padding:5% 1% ;
-    
-}
-.special-bg{
-    background: url(image/banner-03.jpg) ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 5%;
-    border-radius: 5px;
-
-}
-.special-bg::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(28, 64, 223, 0.171);
-}
-/* --- contact background image  */
-.contactbg{
-    background: url(image/banner-06.jpg) ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-
-}
-.contactbg::after, 
-.aboutbg::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 255, 0.329), rgba(78, 5, 5, 0.26));
-    
-}
-.contactbg-content, 
-.aboutbg-content {
-    position: absolute;
-   top: 30%;
-   margin: 0 auto;
-}
-.contactbg-content h1, .aboutbg-content h1{
-    text-align: center;
-    font-size: var(--font-h1);
-    color: #fff;
-    font-weight: 600;
-    text-transform: capitalize;
-}
-/* ---- about background image---  */
-.aboutbg{
-    background: url(image/banner-04.jpg) ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    height: 95vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-
-
-
 .buttons a{
     cursor: pointer;
     padding: 15px 28px;
@@ -296,12 +211,12 @@ nav .right .up::before{
     transition: 0.4s;
     
 }
-#btn-1, #btn-2:hover{
+#btn-1, #btn-2:hover, .image-content .btn{
     background-color: #fff;
     color: #000;
     
 }
-#btn-1:hover{
+#btn-1:hover, #special .btn:hover{
     background-color: #000;
     color: #fff;
     border: 1px solid  #154D60;
@@ -389,6 +304,316 @@ nav .right .up::before{
 
 }
 /* ---==============header ends here ==============-------  */
+
+/* ----=================main start here====================-------  */
+.logo-img{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    width: 900px;
+    margin: 0 auto;
+    padding: 2% 0;
+
+}
+
+#images{
+    padding: 2% 0;
+    height: 85vh;
+
+}
+#image-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+.image-card{
+    height: 400px;
+    width: 350px;
+    
+}
+.image-card img{
+    height: 400px;
+    width: 350px;
+    border-radius: 5px;
+}
+.image-card .image-content{
+    height: 400px;
+    width: 350px;
+    position: absolute;
+    padding: 30px;
+    background:rgba(0, 0, 0, 0.473);
+    margin-top: -405px;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.image-content h3{
+    margin-bottom: 15px;
+    font-size: var(--font-h3);
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+.image-content p{
+    margin-bottom: 20px;
+    font-size: var(---font-p);
+    font-weight: 400;
+    line-height: 25px;
+    width: 250px;
+    
+}
+
+.image-content .btn{
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 35px; 
+    
+}
+/* ----------------product feature --------------  */
+#product{
+    width: 100%;
+    margin: 0 auto;
+    padding: 4% 0;
+    
+}
+#product h2{
+    text-align: center;
+    font-size: var(---font-h2);
+    font-weight: 600;
+    color: var(---black-color);
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+#product h2::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    border-radius: 50px;
+    background-color: var(---blue);
+    margin-top: 60px;
+    margin-left: 100px;
+}
+#product-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+
+}
+#product-container .product-card{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.product-card img{
+    width: 250px;
+    height: 220px;
+    position: relative;
+    border-radius: 3px;
+}
+.product-card .pop-btn{
+    display: block;
+    background-color: #f7f1f1a2;
+    width: 60px;
+    padding: 5px 15px;
+    border-radius: 50px;
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: absolute;
+    margin:15px 0 0 10px ;
+    font-size: var(--font-13);
+    font-weight: 400;
+    transition: 0.4s;
+
+}
+.pop-btn:hover{
+    background-color: #fff;
+    color: var(---orange);
+}
+.product-content{
+    margin-top: 15px;
+    padding: 5px;
+}
+.product-content .info{
+    display: block;
+    font-size: var(---font-15);
+    font-weight: 600;
+    color: var(---black-color);
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.product-content .info-text{
+    font-size: var(--font-13);
+    font-weight: 400;
+    color: var(---text-color);
+    text-transform: capitalize;
+    margin: 4px 0;
+    opacity: 0.6;
+}
+.product-content .price{
+    font-size: var(--font-15);
+    font-weight: 500;
+    color: var(---black-color);
+    margin: 4px 0;
+    
+}
+.product-content .price span{
+    text-decoration: line-through;
+    color: var(---text-color);
+    opacity: 0.5;
+}
+.product-content .star{
+    display: flex;
+    gap: 2px;
+    margin: 6px 0;
+
+}
+
+/* --------------product feature ends-------  */
+
+#special{
+    padding:5% 1% ;
+    
+}
+.special-bg{
+    background: url(image/banner-03.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    border-radius: 5px;
+
+}
+.special-bg::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(28, 64, 223, 0.26);
+}
+.special-container{
+    width: 50%;
+    color: #fff;
+    text-align: left;
+    padding-left: 30px;
+}
+.special-container h4{
+    font-size: var(--font-h4);
+    font-weight: 600;
+    line-height: 30px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: #fff;
+
+}
+.special-container h2{
+    font-size: var(---font-h2);
+    font-weight: 600;
+    line-height: 30px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    color: #fff;
+
+}
+.special-container p{
+    font-size: var(---font-p);
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 30px;
+    color: #fff;
+
+}
+#special .btn{
+    background-color: #fff;
+    color:#000;
+    font-size: var(---font-15);
+    font-weight: 600;
+    transition: 0.5s;
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    margin-top: -100px;
+    margin-left: 90px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+
+/* --- contact background image  */
+.contactbg{
+    background: url(image/banner-06.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.contactbg::after, 
+.aboutbg::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 255, 0.329), rgba(78, 5, 5, 0.26));
+    
+}
+.contactbg-content, 
+.aboutbg-content {
+    position: absolute;
+   top: 30%;
+   margin: 0 auto;
+}
+.contactbg-content h1, .aboutbg-content h1{
+    text-align: center;
+    font-size: var(--font-h1);
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+/* ---- about background image---  */
+.aboutbg{
+    background: url(image/banner-04.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+
+
 /* ---=============== footer start here =============--  */
 footer{
     width: 100%;
