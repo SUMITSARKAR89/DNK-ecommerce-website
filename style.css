@@ -7,6 +7,23 @@
     text-decoration: none;
     transition:  ease-in-out;
 }
+hr{
+    opacity: 0.5;
+    padding: 1% 0;
+}
+.tag{
+    font-size: var(--font-h3);
+    margin-bottom: 30px;
+    display: block;
+    font-weight: 600;
+    color: var(---black-color);
+    transition: 0.4s;
+}
+.tag:hover{
+    color: var(---blue);
+
+}
+
 :root{
 
     /*color */
@@ -62,12 +79,14 @@ body{
     font-family: "Lato", sans-serif;
     width: 100%;
     height: auto;
+    background-color: #fafafa;
 }
 /* ------============main css ==============------  */
 .container{
     width: 100%;
     padding: 2% 7%;
 }
+
 
 /* ----------------header start here---------------------  */
 header{
@@ -145,6 +164,7 @@ nav .right .up::before{
     
 }
 
+
 .bg-color::after{
     content: '';
     position: absolute;
@@ -174,6 +194,35 @@ nav .right .up::before{
     color: #fff;
     margin-bottom: 20px;
 }
+
+#special{
+    padding:5% 1% ;
+    
+}
+.special-bg{
+    background: url(image/banner-03.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    border-radius: 5px;
+
+}
+.special-bg::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(28, 64, 223, 0.171);
+}
 /* --- contact background image  */
 .contactbg{
     background: url(image/banner-06.jpg) ;
@@ -189,7 +238,8 @@ nav .right .up::before{
     
 
 }
-.contactbg::after{
+.contactbg::after, 
+.aboutbg::after{
     content: '';
     position: absolute;
     width: 100%;
@@ -199,12 +249,13 @@ nav .right .up::before{
     background: linear-gradient(to bottom, rgba(0, 0, 255, 0.329), rgba(78, 5, 5, 0.26));
     
 }
-.contactbg-content{
+.contactbg-content, 
+.aboutbg-content {
     position: absolute;
    top: 30%;
    margin: 0 auto;
 }
-.contactbg-content h1{
+.contactbg-content h1, .aboutbg-content h1{
     text-align: center;
     font-size: var(--font-h1);
     color: #fff;
@@ -225,16 +276,7 @@ nav .right .up::before{
     justify-content: center;
 
 }
-.aboutbg::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 255, 0.151), rgba(78, 5, 5, 0.26));
-    
-}
+
 
 
 
@@ -444,7 +486,7 @@ footer{
     opacity: 0.5;
     font-size: var(---font-15);
 }
-button{
+button, .btn{
     padding:12px 30px ;
     text-transform: uppercase;
     font-size: var(---font-15);
@@ -456,8 +498,9 @@ button{
     outline: none;
     border-radius: 2px;
     transition: 0.4s ease;
+    display: block;
 }
-button:hover{
+button:hover, .btn:hover{
     background-color: #1583e4f5;
 }
 .copyright{
@@ -491,8 +534,9 @@ button:hover{
 }
 
 /* =========================== contact folder start here ===========================  */
+/* section queries  */
 #queries{
-    padding: 5% 0% ;
+    padding: 3% 0% ;
     width: 100%;
     margin: 0 auto;
 }
@@ -559,7 +603,278 @@ button:hover{
     font-weight: 800;
     color: var(---blue);
 }
+/* section form box  */
+#form-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3% 0 7%;
+    gap: 20px;
+   
+}
+.formbox-card{
+    width: 100%;
+    background-color:#fff8f8;
+    padding: 20px;
+}
+.formbox-card h6{
+    font-size: var(---font-15);
+    font-weight: 600;
+    color: var(---black-color);
+    line-height: 50px;
+}
+.formbox-card h2{
+    font-size: var(---font-h2);
+    font-weight: 700;
+    color: var(---black-color);
+    line-height: 50px;
+    margin-bottom: 35px; 
+}
+.formbox-card p{
+    font-size: var(---font-p);
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    width: 95%;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    min-width: 90%;
+    margin:  0 auto;
+    gap: 15px;
+}
+#form input, textarea{
+    padding: 15px;
+    outline: none;
+    resize: none;
+    
+}
+#form input:focus, textarea:focus{
+    border-color: rgba(129, 108, 108, 0.308);
+}
+#form input::placeholder, textarea::placeholder{
+    text-transform: capitalize;
+    font-size: var(--font-h5);
 
+}
+/* =========================== about us folder start here ===========================  */
+#about-hero{
+    padding: 1% 0 5%;
+    width: 100%;
+    margin: 0 auto;
+}
+#about-hero-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;  
+}
+#about-hero-container img{
+    width: 50%;
+}
+#about-hero-container .about-hero-content{
+    width: 50%;
+    margin-right: 50px;
+}
+.about-hero-content h2::before{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    border-radius: 5%;
+    background-color: var(---blue);
+    margin-top: -30px;
+    margin-left: 0px;
+}
+.about-hero-content h2{
+    font-size: var(---font-h2);
+    font-weight: 600;
+    color: var(---black-color);
+    line-height: 35px;
+    margin: 8% 0;
 
-
+}
+.about-hero-content p{
+    font-size: var(---font-p);
+    color: var(---header-text-color);
+    font-weight: 400;
+    line-height: 28px;
+}
+/* ----- team section----  */
+#team{
+    padding: 2% 0;
+    width: 100%;
+    margin: auto;
+}
+#team-container{
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+#team-container .h4{
+    font-size: var(--font-h4);
+    font-weight: 500;
+    color: var(---black-color);
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+#team-container .h4::before{
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 4px;
+    border-radius: 50px;
+    background-color: var(---blue);
+    margin-top: -30px;
+    margin-left: 50px;
+}
+#team-container h2{
+    font-size: var(---font-h2);
+    font-weight: 600;
+    line-height: 35px;
+    margin-bottom: 30px;
+    color: var(---black-color);
+}
+#team-container p{
+    font-size: var(---font-p);
+    font-weight: 400;
+    color: var(---header-text-color);
+    line-height: 30px;
+    margin-bottom: 35px;
+}
+#team-container .client-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 5% 0 0 0;
+}
+.client-container .client-card{
+    background-color: rgba(199, 180, 180, 0.137);
+    padding: 15px 5px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.client-card img{
+    width:100px ;
+    height:100px ;
+}
+.client-card h4{
+    font-size: var(--font-h4);
+    font-weight: 600;
+    color: var(---black-color);
+    line-height: 25px ;
+    margin-top: 20px;
+}
+.client-card p{
+    font-size: var(---font-p);
+    color: var(---text-color);
+    font-weight: 400;
+    margin-top: 15px;
+}
+/* -------- follow section -------  */
+#follow{
+    background: url(image/banner-05.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+/* #follow::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+} */
+#follow .follow-content{
+    background-color: rgb(245, 244, 244);
+    width: 350px;
+    height: 60vh;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.follow-content h2{
+    font-size: var(---font-h2);
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(---black-color);
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+.follow-content h2::before{
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 4px;
+    border-radius: 50px;
+    background-color: var(---blue);
+    margin-top: -30px;
+    margin-left: 50px;
+}
+.follow-social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+.follow-social a{
+    display: block;
+    
+}
+.follow-social a i{
+    color:#000;
+    font-size: var(--footer-font-nav);
+}
+/* -------- connect section------  */
+#connect{
+    padding: 3% 0 4%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+#connect-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 30px;
+}
+#connect-container .connect-card{
+    padding: 30px 5px;
+}
+.connect-card img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+.connect-card h5{
+    text-transform: capitalize;
+    font-size: var(--font-h5);
+    color: var(---black-color);
+    line-height: 28px;
+    margin-bottom: 18px;
+}
+.connect-card p{
+    text-transform: capitalize;
+    font-size: var(---font-p);
+    font-weight: 400;
+    color: var(---text-color);
+    line-height: 28px;
+    margin-bottom: 18px;
+}
 
