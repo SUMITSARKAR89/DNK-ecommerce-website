@@ -55,10 +55,43 @@
                 <div class="right ">
                     <a href="about.html">about</a>
                     <a href="contant.html">contact us</a>
-                    <a href="#"><span>$0.00</span></a>
-                    <a href="#" class="up"><i class="fa-solid fa-bag-shopping"></i></a>
-                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                    <a href="#" title="Your balance"><span>$0.00</span></a>
+                    <a href="#" class="up" title="cart" id="cart"><i class="fa-solid fa-bag-shopping"></i></a>
+
+                    <a href="#" title="log In" id="log-in"  ><i class="fa-solid fa-user"></i></a>
                 </div>
+                 <!-- ------cart-------  -->
+                 <div id="cartbody" class="cartbody">
+                    
+                    <div class="cart-head">
+                    <p><a href="#">cart details</a></p>
+                    <a href="#" id="cart-close" ><i class="fa-solid fa-close"></i></a>
+                   </div>
+                    <div class="cart-content"> <p>no product is in cart</p></div>
+                    <a href="everything.html" class="cartbtn" type="submit" >continue shopping</a> 
+                    
+                </div>
+
+                <!-- -------- log in------->
+                 <div id="loginbody">
+                    <div class="log-head">
+                        <p><a href="#">log in / sign up</a></p>
+                        <a href="#" id="log-close" ><i class="fa-solid fa-close"></i></a>
+                    </div>
+                    <div class="log-content">
+                        
+                        <input type="email" name="emal" id="email" placeholder="Enter your mail address" required>
+                        <input type="password" name="password" id="password" required placeholder=" Type your password" maxlength="6">
+                        <div class="remember-forget">
+                            <div class="remember">
+                                <input type="checkbox" name="" id="">
+                                <label>Remember me</label></div>
+                            <a href="#">forget password</a>
+                        </div>
+                        <input type="submit" value="Sign In" class="btn" style="margin-top: 30px;">
+                    </div>
+
+                 </div>
             </nav>
             
             <div class="mobile nav" id="nav">
