@@ -79,7 +79,7 @@ body{
     font-family: "Lato", sans-serif;
     width: 100%;
     height: auto;
-    background-color: #fafafa;
+    background-color: #f5efef;
 }
 /* ------============main css ==============------  */
 .container{
@@ -150,7 +150,7 @@ nav .right .up::before{
 }
 /* -------cart----------  */
 #cartbody, #loginbody{
-    background-color: #ffffffdc;
+    background-color: #fff;
     backdrop-filter: blur(20px);
     height: 80vh;
     width: 350px;
@@ -530,6 +530,7 @@ nav .right .up::before{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    background-color: rgb(247, 244, 244);
 }
 .product-card img{
     width: 300px;
