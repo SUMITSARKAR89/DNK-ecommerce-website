@@ -15,6 +15,7 @@
 -  1. Flex, grid.
    2. Responsive card, container, animation
    3. position fixed, hover, search engine, header and footer.
+   4. aside, form, filter.
 
 -  Ask me about `HTML, CSS and JS`.
 
